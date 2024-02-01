@@ -1,0 +1,10 @@
+skip: [txt, mp4, avi, mov]
+file_scheme: "{TITLE}_[POSTID-{POSTID}]"
+sort: new
+log: /config/BDFR.log
+max_wait_time: 30
+search_existing: false  # https://github.com/aliparlakci/bulk-downloader-for-reddit/issues/651
+subreddit:
+  - earthporn
+skip_domain:
+  - pics.example.com
