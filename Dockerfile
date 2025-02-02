@@ -13,8 +13,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt update && \
 
 RUN apt update && apt install -y ffmpeg
 
-RUN pip3 install git+https://github.com/dockerandgit/fpn8bhco7qr4@dev
-
+RUN pip3 install git+https://github.com/dockerandgit/fpn8bhco7qr4@latest
 ADD https://github.com/just-containers/s6-overlay/releases/download/v${S6_VER}/s6-overlay-noarch.tar.xz /tmp
 RUN tar -C / -Jxpf /tmp/s6-overlay-noarch.tar.xz
 ADD https://github.com/just-containers/s6-overlay/releases/download/v${S6_VER}/s6-overlay-${S6_ARCH}.tar.xz /tmp
