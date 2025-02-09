@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - 'dev'
+      - 'users'
 
 jobs:
   docker:
@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.REPO_NAME }}:dev
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.REPO_NAME }}:users
